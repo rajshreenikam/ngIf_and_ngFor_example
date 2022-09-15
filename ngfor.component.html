@@ -1,0 +1,44 @@
+
+    <h2 class="heading">Singer Details</h2>
+    <table>
+        
+        <tr>
+      <div *ngFor="let Singer of singers">
+       
+        <td >Singer Name</td>
+        <td>{{Singer.singerName}}</td>
+        <td>Total Songs</td>
+        <td>{{Singer.totalSongs}}</td>
+        <td >Hit Song</td>
+        <td>{{Singer.hitSong}}</td>
+        <td >Movie Name</td>
+        <td>{{Singer.movieName}}</td>
+        <td >Release Year</td>
+        <td>{{Singer.releaseYear}}</td>
+       
+    </div>
+</tr>
+    </table>
+
+    
+    
+    <h2 class="heading">Singer who sang more than 100 songs</h2>
+    <div *ngFor="let Singer of singers" >
+    
+        <div *ngIf="Singer.totalSongs > 100">
+            <table>
+                <tr>
+                    <td >Singer Name</td>
+                    <td>{{Singer.singerName}}</td>
+                    <td>Total Songs</td>
+                    <td>{{Singer.totalSongs}}</td>
+                    <td >Hit Song</td>
+                    <td>{{Singer.hitSong}}</td>
+                    <td >Movie Name</td>
+                    <td>{{Singer.movieName}}</td>
+                    <td >Release Year</td>
+                    <td>{{Singer.releaseYear}}</td>
+                    
+                </tr>
+            </table>
+ 
